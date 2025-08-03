@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Yos Piseth - Portfolio</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
@@ -295,6 +295,27 @@
             border-radius: 2px;
         }
 
+        .section-sub-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #ffffff;
+            position: relative;
+        }
+
+        .section-sub-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70px;
+            height: 3px;
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            border-radius: 2px;
+        }
+
         /* Cards */
         .card {
             background: rgba(255, 255, 255, 0.05);
@@ -357,6 +378,14 @@
             display: flex;
             flex-wrap: wrap;
             gap: 0.5rem;
+        }
+
+        .underline-none {
+            text-decoration: none;
+        }
+
+        .underline-none:hover {
+            text-decoration: underline;
         }
 
         .skill-tag {
@@ -431,6 +460,11 @@
         .experience-description {
             color: #8892b0;
             line-height: 1.6;
+        }
+
+        .work-list {
+            margin-left: 2.5rem;
+            margin-top: 1rem;
         }
 
         /* Contact section */
@@ -689,9 +723,10 @@
                 <h1>Yos Piseth</h1>
                 <p class="subtitle">Web Development</p>
                 <p class="intro">
-                    Passionate about creating innovative digital solutions that bridge the gap between
-                    beautiful design and powerful functionality. I bring ideas to life through code
-                    and creativity, always pushing the boundaries of what's possible.
+                    I’m passionate about building innovative digital experiences that blend elegant design with robust
+                    functionality. With a strong focus on usability, performance, and clean code, I bring ideas to life
+                    through modern web technologies—turning concepts into dynamic, responsive, and user-centered
+                    applications.
                 </p>
                 <a href="#experience" class="cta-button">View My Work</a>
             </div>
@@ -704,23 +739,24 @@
 
                 <div class="card fade-in-up">
                     <div class="education-item">
-                        <div class="education-year">2020-2024</div>
+                        <div class="education-year">2023-Present</div>
                         <div class="education-details">
-                            <h3>Bachelor of Science in Computer Science</h3>
-                            <p>University Name • GPA: 3.8/4.0</p>
-                            <p>Relevant Coursework: Data Structures, Algorithms, Software Engineering, Database Systems,
-                                Web Development</p>
+                            <h3>Software Development</h3>
+                            <p>STEP IT Academy Cambodia</p>
+                            <p>Relevant Coursework: Web Development, App Development, Game Development, Database
+                                Systems</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="card fade-in-up">
                     <div class="education-item">
-                        <div class="education-year">2023</div>
+                        <div class="education-year">2018-2020</div>
                         <div class="education-details">
-                            <h3>Full Stack Web Development Bootcamp</h3>
-                            <p>Coding Bootcamp Name • Certificate</p>
-                            <p>Intensive 6-month program covering modern web technologies and best practices</p>
+                            <h3>High School</h3>
+                            <p>Bac II</p>
+                            <p>When I finished my ninth grade exam, I continued to study at high school in 2018- 2020. I
+                                passed the Bac II exam</p>
                         </div>
                     </div>
                 </div>
@@ -736,25 +772,23 @@
                     <div class="card skill-category fade-in-up">
                         <h3>Frontend Development</h3>
                         <div class="skill-tags">
-                            <span class="skill-tag">React</span>
-                            <span class="skill-tag">Vue.js</span>
                             <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">JQuery</span>
                             <span class="skill-tag">HTML5</span>
                             <span class="skill-tag">CSS3</span>
                             <span class="skill-tag">Tailwind CSS</span>
+                            <span class="skill-tag">Bootstrap</span>
+                            <span class="skill-tag">Vue.js</span>
+                            <span class="skill-tag">Element Plus</span>
                         </div>
                     </div>
 
                     <div class="card skill-category fade-in-up">
                         <h3>Backend Development</h3>
                         <div class="skill-tags">
-                            <span class="skill-tag">Node.js</span>
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">Express.js</span>
-                            <span class="skill-tag">Django</span>
-                            <span class="skill-tag">PostgreSQL</span>
-                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">ASP.NET Core & C#</span>
+                            <span class="skill-tag">Entity Framework</span>
+                            <span class="skill-tag">SQL Server</span>
                             <span class="skill-tag">REST APIs</span>
                         </div>
                     </div>
@@ -763,12 +797,9 @@
                         <h3>Tools & Technologies</h3>
                         <div class="skill-tags">
                             <span class="skill-tag">Git</span>
-                            <span class="skill-tag">Docker</span>
-                            <span class="skill-tag">AWS</span>
-                            <span class="skill-tag">Figma</span>
-                            <span class="skill-tag">Adobe Creative Suite</span>
-                            <span class="skill-tag">Webpack</span>
-                            <span class="skill-tag">Jest</span>
+                            <span class="skill-tag">Postman</span>
+                            <span class="skill-tag">Unity Engine</span>
+                            <span class="skill-tag">Star UML</span>
                         </div>
                     </div>
 
@@ -776,11 +807,14 @@
                         <h3>Soft Skills</h3>
                         <div class="skill-tags">
                             <span class="skill-tag">Problem Solving</span>
-                            <span class="skill-tag">Team Leadership</span>
-                            <span class="skill-tag">Project Management</span>
-                            <span class="skill-tag">Communication</span>
-                            <span class="skill-tag">Agile/Scrum</span>
                             <span class="skill-tag">Critical Thinking</span>
+                            <span class="skill-tag">Client Support</span>
+                            <span class="skill-tag">Communication</span>
+                            <span class="skill-tag">Team Collaboration</span>
+                            <span class="skill-tag">Time Management</span>
+                            <span class="skill-tag">Attention to Detail</span>
+                            <span class="skill-tag">Receptiveness to Feedback</span>
+                            <span class="skill-tag">Self-Motivation</span>
                         </div>
                     </div>
                 </div>
@@ -791,93 +825,51 @@
         <section id="projects">
             <div class="container">
                 <h2 class="section-title">Projects</h2>
-
                 <div class="skills-grid">
                     <div class="card skill-category fade-in-up">
-                        <h3>Frontend Development</h3>
+                        <h3>UI Web App Projects</h3>
                         <div class="skill-tags">
-                            <span class="skill-tag">React</span>
-                            <span class="skill-tag">Vue.js</span>
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">TypeScript</span>
-                            <span class="skill-tag">HTML5</span>
-                            <span class="skill-tag">CSS3</span>
-                            <span class="skill-tag">Tailwind CSS</span>
+                            <span class="skill-tag">Student Web</span>
+                            <span class="skill-tag">Scan Attendance</span>
+                            <span class="skill-tag">Class Schedule, Classroom Manage</span>
+                            <span class="skill-tag">Lecturer Web</span>
+                            <span class="skill-tag">IU E-Document</span>
                         </div>
                     </div>
 
                     <div class="card skill-category fade-in-up">
-                        <h3>Backend Development</h3>
+                        <h3>Game Projects</h3>
                         <div class="skill-tags">
-                            <span class="skill-tag">Node.js</span>
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">Express.js</span>
-                            <span class="skill-tag">Django</span>
-                            <span class="skill-tag">PostgreSQL</span>
-                            <span class="skill-tag">MongoDB</span>
-                            <span class="skill-tag">REST APIs</span>
+                            <a href="https://github.com/PisethPT/Fish-Picture-Puzzle"
+                                class="skill-tag underline-none">Puzzle Block</a>
+                            <a href="https://github.com/PisethPT/cua-box-bau-mateched-box"
+                                class="skill-tag underline-none">Matched Box</a>
+                            <a href="https://github.com/PisethPT/forest-scatter-slot"
+                                class="skill-tag underline-none">Forest Scatter Slot</a>
+                            <a href="https://github.com/PisethPT/Unity-2D-Lottory_Classic-"
+                                class="skill-tag underline-none">Lottery Classic</a>
+                            <a href="https://github.com/PisethPT/Five-Dices-Challenge"
+                                class="skill-tag underline-none">Dices Challenge</a>
+                            <a href="https://github.com/PisethPT?page=2&tab=repositories"
+                                class="skill-tag underline-none">More Projects ...</a>
                         </div>
                     </div>
 
                     <div class="card skill-category fade-in-up">
-                        <h3>Tools & Technologies</h3>
+                        <h3>School Projects</h3>
                         <div class="skill-tags">
-                            <span class="skill-tag">Git</span>
-                            <span class="skill-tag">Docker</span>
-                            <span class="skill-tag">AWS</span>
-                            <span class="skill-tag">Figma</span>
-                            <span class="skill-tag">Adobe Creative Suite</span>
-                            <span class="skill-tag">Webpack</span>
-                            <span class="skill-tag">Jest</span>
-                        </div>
-                    </div>
-
-                    <div class="card skill-category fade-in-up">
-                        <h3>Soft Skills</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Problem Solving</span>
-                            <span class="skill-tag">Team Leadership</span>
-                            <span class="skill-tag">Project Management</span>
-                            <span class="skill-tag">Communication</span>
-                            <span class="skill-tag">Agile/Scrum</span>
-                            <span class="skill-tag">Critical Thinking</span>
-                        </div>
-                    </div>
-                    <div class="card skill-category fade-in-up">
-                        <h3>Soft Skills</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Problem Solving</span>
-                            <span class="skill-tag">Team Leadership</span>
-                            <span class="skill-tag">Project Management</span>
-                            <span class="skill-tag">Communication</span>
-                            <span class="skill-tag">Agile/Scrum</span>
-                            <span class="skill-tag">Critical Thinking</span>
-                        </div>
-                    </div>
-                    <div class="card skill-category fade-in-up">
-                        <h3>Soft Skills</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Problem Solving</span>
-                            <span class="skill-tag">Team Leadership</span>
-                            <span class="skill-tag">Project Management</span>
-                            <span class="skill-tag">Communication</span>
-                            <span class="skill-tag">Agile/Scrum</span>
-                            <span class="skill-tag">Critical Thinking</span>
-                        </div>
-                    </div>
-                    <div class="card skill-category fade-in-up">
-                        <h3>Soft Skills</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Communication</span>
-                            <span class="skill-tag">Agile/Scrum</span>
-                            <span class="skill-tag">Critical Thinking</span>
-                        </div>
-                    </div>
-                    <div class="card skill-category fade-in-up">
-                        <h3>Soft Skills</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Problem Solving</span>
-                            <span class="skill-tag">Team Leadership</span>
+                            <a href="https://github.com/PisethPT/MPOS.App" class="skill-tag underline-none">MPOS
+                                System</a>
+                            <a href="https://github.com/PisethPT/RecordShop" class="skill-tag underline-none">Recode
+                                Shop</a>
+                            <a href="https://github.com/PisethPT/.NetMAUIBookLibraryOpenAPI.Org"
+                                class="skill-tag underline-none">Book Library Mobile App (Maui)</a>
+                            <a href="https://github.com/PisethPT/Fitness-Gym-Club-ASP.NET-MVC-Identity-EF-Core-"
+                                class="skill-tag underline-none">Fitness Gym Club Web (ASP.NET MVC)</a>
+                            <span class="skill-tag">English Premier Langues (Laravel)</span>
+                            <span class="skill-tag">V-EPL System (Vue 3 + Element Plus)</span>
+                            <a href="https://github.com/PisethPT?page=2&tab=repositories"
+                                class="skill-tag underline-none">More Projects ...</a>
                         </div>
                     </div>
                 </div>
@@ -891,40 +883,46 @@
                 <div class="card fade-in-up">
                     <div class="experience-timeline">
                         <div class="experience-item">
-                            <div class="experience-period">Jan 2024 - Present</div>
-                            <div class="experience-role">Senior Full Stack Developer</div>
-                            <div class="experience-company">Tech Company Name</div>
+                            <div class="experience-period">Oct 2024 - Present</div>
+                            <div class="experience-role">Web Developer</div>
+                            <div class="experience-company">International University (IU)</div>
                             <div class="experience-description">
-                                Leading development of scalable web applications using React and Node.js.
-                                Collaborated with cross-functional teams to deliver high-quality solutions
-                                that improved user engagement by 40%. Mentored junior developers and
-                                implemented best practices for code quality and testing.
+                                Developed responsive web applications using ASP.NET Core, SQL Server, and modern
+                                JavaScript frameworks. Focused on School Management Systems, supporting Staff, Lecturer,
+                                and Student roles. Improved legacy features and implemented performance optimization
+                                techniques.
+
+                                Worked on and expanded core functionalities, including:
+
+                                <ul class="work-list">
+                                    <li>IU E-Document System: Student schedules, classroom management, attendance
+                                        scanning, grade lists, and score tracking.</li>
+                                    <li>Lecturer Information System: Centralized lecturer data and schedules.</li>
+                                    <li>Lecturer Web App: Manage personal information and daily teaching schedules.</li>
+                                    <li>Student Web App: View daily schedules, evaluate lecturers, and track attendance.
+                                    </li>
+                                </ul>
                             </div>
                         </div>
 
                         <div class="experience-item">
-                            <div class="experience-period">Jun 2022 - Dec 2023</div>
-                            <div class="experience-role">Frontend Developer</div>
-                            <div class="experience-company">Startup Company Name</div>
+                            <div class="experience-period">May 2023 - July 2024</div>
+                            <div class="experience-role">Game Developer (Unity)</div>
+                            <div class="experience-company">Phoenix Co,LTD</div>
                             <div class="experience-description">
-                                Developed responsive web applications using modern JavaScript frameworks.
-                                Worked closely with UI/UX designers to implement pixel-perfect designs
-                                and optimize user experience. Reduced page load times by 60% through
-                                performance optimization techniques.
+                                Developed 2D games using the Unity Engine with C# for both front-end gameplay and
+                                back-end game services.
+                                <ul class="work-list">
+                                    <li>Built and integrated RESTful Web APIs using .NET MAUI for cross-platform app
+                                        communication.</li>
+                                    <li>Created automated tools to streamline the release process for publishing on App
+                                        Store and Google Play Store.</li>
+                                    <li>Designed and implemented scalable backend services to support game data, player
+                                        progress, and cloud interactions.</li>
+                                </ul>
                             </div>
                         </div>
 
-                        <div class="experience-item">
-                            <div class="experience-period">Sep 2021 - May 2022</div>
-                            <div class="experience-role">Web Development Intern</div>
-                            <div class="experience-company">Digital Agency Name</div>
-                            <div class="experience-description">
-                                Assisted in building client websites and web applications. Gained hands-on
-                                experience with various technologies and contributed to multiple successful
-                                project deliveries. Developed strong problem-solving skills and attention
-                                to detail.
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -953,14 +951,14 @@
                                 <path
                                     d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
                             </svg>
-                            <a href="mailto:yospiseth@gmail.com">yospiseth@gmail.com</a>
+                            <a href="mailto:pisitpt120@gmail.com">pisitpt120@gmail.com</a>
                         </div>
                         <div class="contact-item">
                             <svg viewBox="0 0 24 24">
                                 <path
                                     d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
                             </svg>
-                            <a href="tel:+85512345678">+855 12 345 678</a>
+                            <a href="tel:+855966910412">+855 966 910 412</a>
                         </div>
                         <div class="contact-item">
                             <svg viewBox="0 0 24 24">
@@ -980,15 +978,15 @@
 
                         <!-- social -->
                         <div class="social-links">
-                            <a href="https://facebook.com/yospiseth" class="social-link" target="_blank"
-                                rel="noopener noreferrer">
+                            <a href="https://www.facebook.com/piseth.pt.2025?mibextid=ZbWKwL" class="social-link"
+                                target="_blank" rel="noopener noreferrer">
                                 <svg viewBox="0 0 24 24">
                                     <path
                                         d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                                 </svg>
                             </a>
 
-                            <a href="https://t.me/yospiseth" class="social-link" target="_blank"
+                            <a href="https://t.me/pisethpt" class="social-link" target="_blank"
                                 rel="noopener noreferrer">
                                 <svg viewBox="0 0 24 24">
                                     <path
@@ -996,35 +994,19 @@
                                 </svg>
                             </a>
 
-                            <a href="https://github.com/yospiseth" class="social-link" target="_blank"
-                                rel="noopener noreferrer">
+                            <a href="https://github.com/PisethPT?page=2&tab=repositories" class="social-link"
+                                target="_blank" rel="noopener noreferrer">
                                 <svg viewBox="0 0 24 24">
                                     <path
                                         d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                                 </svg>
                             </a>
 
-                            <a href="https://linkedin.com/in/yospiseth" class="social-link" target="_blank"
-                                rel="noopener noreferrer">
+                            <a href="https://www.linkedin.com/in/yos-piseth-93b1132a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                class="social-link" target="_blank" rel="noopener noreferrer">
                                 <svg viewBox="0 0 24 24">
                                     <path
                                         d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                                </svg>
-                            </a>
-
-                            <a href="https://twitter.com/yospiseth" class="social-link" target="_blank"
-                                rel="noopener noreferrer">
-                                <svg viewBox="0 0 24 24">
-                                    <path
-                                        d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
-                                </svg>
-                            </a>
-
-                            <a href="https://instagram.com/yospiseth" class="social-link" target="_blank"
-                                rel="noopener noreferrer">
-                                <svg viewBox="0 0 24 24">
-                                    <path
-                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
                                 </svg>
                             </a>
 
@@ -1044,7 +1026,7 @@
 
     <footer>
         <div class="container">
-            <p class="footer-text">© 2024 Yos Piseth. All rights reserved.</p>
+            <p class="footer-text">© 2025 Yos Piseth. All rights reserved.</p>
             <p class="footer-love">Made with ❤️ in Cambodia</p>
         </div>
     </footer>
