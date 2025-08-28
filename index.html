@@ -677,6 +677,90 @@
                 padding: 3rem 0;
             }
         }
+
+        /* Skills section */
+        .project-flex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .project-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .project-card {
+            position: relative;
+            flex: 1 1 30%;
+            max-width: 32%;
+            min-width: 220px;
+            padding: 0 !important;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+
+        .project-card-body {
+            padding: 1rem;
+            padding-top: 0 !important;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+        }
+
+        @media (max-width: 900px) {
+            .project-card {
+                flex: 1 1 45%;
+                max-width: 48%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .project-card {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 0;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            transition: transform 0.3s ease;
+            display: block;
+        }
+
+        h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .more {
+            height: 100%;
+            text-align: center;
+        }
+
+        .float-end {
+            float: right;
+        }
+
+        .source-code {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            padding: 0 !important;
+            margin-bottom: 1rem;
+        }
     </style>
 </head>
 
@@ -825,7 +909,7 @@
         <section id="projects">
             <div class="container">
                 <h2 class="section-title">Projects</h2>
-                <div class="skills-grid">
+                <div class="project-grid">
                     <div class="card skill-category fade-in-up">
                         <h3>UI Web App Projects</h3>
                         <div class="skill-tags">
@@ -839,37 +923,186 @@
 
                     <div class="card skill-category fade-in-up">
                         <h3>Game Projects</h3>
-                        <div class="skill-tags">
-                            <a href="https://github.com/PisethPT/Fish-Picture-Puzzle"
-                                class="skill-tag underline-none">Puzzle Block</a>
-                            <a href="https://github.com/PisethPT/cua-box-bau-mateched-box"
-                                class="skill-tag underline-none">Matched Box</a>
-                            <a href="https://github.com/PisethPT/forest-scatter-slot"
-                                class="skill-tag underline-none">Forest Scatter Slot</a>
-                            <a href="https://github.com/PisethPT/Unity-2D-Lottory_Classic-"
-                                class="skill-tag underline-none">Lottery Classic</a>
-                            <a href="https://github.com/PisethPT/Five-Dices-Challenge"
-                                class="skill-tag underline-none">Dices Challenge</a>
-                            <a href="https://github.com/PisethPT?page=2&tab=repositories"
-                                class="skill-tag underline-none">More Projects ...</a>
+                        <div class="project-group">
+                            <div class="project-card skill-tag">
+                                <img src="https://private-user-images.githubusercontent.com/141244421/326312557-53fd6490-56a2-4b75-b46e-afb2cf7e6669.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTYzODQzODksIm5iZiI6MTc1NjM4NDA4OSwicGF0aCI6Ii8xNDEyNDQ0MjEvMzI2MzEyNTU3LTUzZmQ2NDkwLTU2YTItNGI3NS1iNDZlLWFmYjJjZjdlNjY2OS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwODI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDgyOFQxMjI4MDlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01MjE0NzI3ZmRkOTJiNTk0NDQ1NDJlMWIzNGMwMGQzNDhjNzE0NzNlMzYyYjM1MmYyNTE3MWRlMmQxOWYxMjM1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.WgAcqXtV6ckxS72elJwpFYZ84rpwJINfb-BjHaP5SX8"
+                                    alt="">
+                                <div class="project-card-body">
+                                    <h4>Forest Slot</h4>
+                                    <p>Jungle Blox Slot Machine is a thrilling and visually captivating mini slot game.
+                                    </p>
+                                    <a href="https://github.com/PisethPT/forest-scatter-slot" target="_blank"
+                                        class="social-link source-code float-end">
+                                        <svg viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                        </svg></a>
+                                </div>
+                            </div>
+                            <div class="project-card skill-tag skill-tags">
+                                <img src="https://private-user-images.githubusercontent.com/141244421/303543883-77ffe12f-0e75-48f2-81cd-e029e1358b35.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTYzODU2OTUsIm5iZiI6MTc1NjM4NTM5NSwicGF0aCI6Ii8xNDEyNDQ0MjEvMzAzNTQzODgzLTc3ZmZlMTJmLTBlNzUtNDhmMi04MWNkLWUwMjllMTM1OGIzNS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwODI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDgyOFQxMjQ5NTVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jZGRiYjFiMGI1MjA2NzY5MzQ0NWU4Y2NiYmRhM2IyZTIwZjJkZmI1NjgzYWQ1NDEzMTA2Y2E1OTQzYjk1ZjI2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.peOeDyJY899L4keQnxjUQ9pT6mYQI75AI2H2N3LlKSQ"
+                                    alt="">
+                                <div class="project-card-body">
+                                    <h4>Puzzle Block</h4>
+                                    <p>Engage your cognitive abilities with this perplexing puzzle.</p>
+                                    <a href="https://github.com/PisethPT/Fish-Picture-Puzzle" target="_blank"
+                                        class="social-link source-code float-end">
+                                        <svg viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                        </svg></a>
+                                </div>
+                            </div>
+                            <div class="project-card skill-tag">
+                                <img src="https://private-user-images.githubusercontent.com/141244421/324234222-1687c679-028c-4597-8bcf-6513b789f9c5.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTYzODU5NTcsIm5iZiI6MTc1NjM4NTY1NywicGF0aCI6Ii8xNDEyNDQ0MjEvMzI0MjM0MjIyLTE2ODdjNjc5LTAyOGMtNDU5Ny04YmNmLTY1MTNiNzg5ZjljNS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwODI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDgyOFQxMjU0MTdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wNWFjMDczNjAxOGExNDE5MWNiYmQ2ODc0NTEwZGExZmY3NTJlMmRmZWIzNGExZDkxNzY0NWNmODcyYzBhMGJiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.2EdM6hv5Vbwo7rIThSS-wxwHchOvARMClx8lD4eX0xo"
+                                    alt="">
+                                <div class="project-card-body">
+                                    <h4>Matched Box</h4>
+                                    <p>Move the box left or right on the item dropped to the same box below.</p>
+                                    <a href="https://github.com/PisethPT/cua-box-bau-mateched-box" target="_blank"
+                                        class="social-link source-code float-end">
+                                        <svg viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                        </svg></a>
+                                </div>
+                            </div>
+                            <div class="project-card skill-tag">
+                                <img src="https://private-user-images.githubusercontent.com/141244421/303545971-374cdc6b-bc0b-4792-9ca5-e067438c1b41.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTYzODYxMzIsIm5iZiI6MTc1NjM4NTgzMiwicGF0aCI6Ii8xNDEyNDQ0MjEvMzAzNTQ1OTcxLTM3NGNkYzZiLWJjMGItNDc5Mi05Y2E1LWUwNjc0MzhjMWI0MS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwODI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDgyOFQxMjU3MTJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iYzMwZTA1MTc4NDE2ZTcwNWVhYmE1ZGQ0NTFjZWE1ZmJhZjRlYmFmMzk5YmNjMGU2N2RjMGQ2YjE1Nzc2MDA1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.MQqpxl3KoJSH79WXHNnZ32tePSxHxFBwtvM6Fg6Bw6s"
+                                    alt="">
+                                <div class="project-card-body">
+                                    <h4>Lottery Classic</h4>
+                                    <p>Fortune Wheel Lotto are numbers from 1 to 25 where players choose 3 cases and 6
+                                        cases. </p>
+                                    <a href="https://github.com/PisethPT/Unity-2D-Lottory_Classic-" target="_blank"
+                                        class="social-link source-code float-end">
+                                        <svg viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                        </svg></a>
+                                </div>
+                            </div>
+                            <div class="project-card skill-tag">
+                                <img src="https://private-user-images.githubusercontent.com/141244421/302087019-867d1d25-d565-45a3-ae00-790691e2b49f.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTYzODY1NzYsIm5iZiI6MTc1NjM4NjI3NiwicGF0aCI6Ii8xNDEyNDQ0MjEvMzAyMDg3MDE5LTg2N2QxZDI1LWQ1NjUtNDVhMy1hZTAwLTc5MDY5MWUyYjQ5Zi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwODI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDgyOFQxMzA0MzZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iYmRlZmNlNjE4OTYyODdhZTkzNjViZTczODY4MjNlODE3YzkyYTQ4YTMxODY4NWRiNTk5MmYxZGVjNzFhZDQzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.5MxJbYmlEg43vK0lrUA9Y7Z4b8AhFwSSL35X6-a2C2g"
+                                    alt="">
+                                <div class="project-card-body">
+                                    <h4>Dices Challenge</h4>
+                                    <p>Select the first, second or third options to calculate the correct answer.</p>
+                                    <a href="https://github.com/PisethPT/Five-Dices-Challenge" target="_blank"
+                                        class="social-link source-code float-end">
+                                        <svg viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                        </svg></a>
+                                </div>
+                            </div>
+                            <a href="https://github.com/PisethPT?page=2&tab=repositories" target="_blank"
+                                class="skill-tag underline-none more">More Projects ...</a>
+
                         </div>
                     </div>
 
                     <div class="card skill-category fade-in-up">
-                        <h3>School Projects</h3>
-                        <div class="skill-tags">
-                            <a href="https://github.com/PisethPT/MPOS.App" class="skill-tag underline-none">MPOS
-                                System</a>
-                            <a href="https://github.com/PisethPT/RecordShop" class="skill-tag underline-none">Recode
-                                Shop</a>
-                            <a href="https://github.com/PisethPT/.NetMAUIBookLibraryOpenAPI.Org"
-                                class="skill-tag underline-none">Book Library Mobile App (Maui)</a>
-                            <a href="https://github.com/PisethPT/Fitness-Gym-Club-ASP.NET-MVC-Identity-EF-Core-"
-                                class="skill-tag underline-none">Fitness Gym Club Web (ASP.NET MVC)</a>
-                            <span class="skill-tag">English Premier Langues (Laravel)</span>
-                            <span class="skill-tag">V-EPL System (Vue 3 + Element Plus)</span>
-                            <a href="https://github.com/PisethPT?page=2&tab=repositories"
-                                class="skill-tag underline-none">More Projects ...</a>
+                        <h3>School Projects & Others</h3>
+                        <div class="project-group">
+                            <div class="project-card skill-tag">
+                                <img src="https://private-user-images.githubusercontent.com/141244421/483180052-25980612-1aa4-408f-9b55-9ce65ddec6fd.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTYzODkxNzAsIm5iZiI6MTc1NjM4ODg3MCwicGF0aCI6Ii8xNDEyNDQ0MjEvNDgzMTgwMDUyLTI1OTgwNjEyLTFhYTQtNDA4Zi05YjU1LTljZTY1ZGRlYzZmZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwODI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDgyOFQxMzQ3NTBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02OWJjNjRkY2I1YWFmMjBiMDQ5MjE0MjhjYjMyNDZiMGNkNmMxNmY3MTAxYWExYjAwNDljM2VmYzE0YTljMjU2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.BcJeTOhiVUYYdgFEvc0fBGHOlSsq0Si7Zsdec8MIzAo"
+                                    alt="">
+                                <div class="project-card-body">
+                                    <h4>V-EPL System (Vue 3 + Element Plus + Tailwind CSS)</h4>
+                                    <p>Create a web project English Premier League Football. The main objective is to
+                                        provide a user-friendly interface for reading and posting information about the
+                                        Premier League. </p>
+                                    <a href="https://github.com/PisethPT/epl_frontend-vue-3-/tree/main"
+                                        class="social-link source-code float-end" target="_blank">
+                                        <svg viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                        </svg></a>
+                                </div>
+                            </div>
+                            <div class="project-card skill-tag">
+                                <img src="https://private-user-images.githubusercontent.com/141244421/483182293-b5bbcecf-4ae8-4d06-a7bd-71ca53523786.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTYzODkzOTQsIm5iZiI6MTc1NjM4OTA5NCwicGF0aCI6Ii8xNDEyNDQ0MjEvNDgzMTgyMjkzLWI1YmJjZWNmLTRhZTgtNGQwNi1hN2JkLTcxY2E1MzUyMzc4Ni5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwODI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDgyOFQxMzUxMzRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xNzM2NGM4Mzg5MmE4NTQ5ODE3ZjljYjJkMjEwNzc4ODY1M2MwMjRmMmRhZmZiNzdlMTU5OTNhODQwNDRiMzNhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.kZVTXr_fCJQTcsRZXQqqyJXPzDFRh--1WTEKRqDec2o"
+                                    alt="">
+                                <div class="project-card-body">
+                                    <h4>V-EPL API (ASP.NET Core) And Backend</h4>
+                                    <p>This project is to develop a RESTful API for the English Premier League (EPL)
+                                        using ASP.NET Core. The API will provide endpoints for accessing and managing
+                                        EPL data, including teams, players, and match information.</p>
+                                    <a href="https://github.com/PisethPT/epl_api/tree/main"
+                                        class="social-link source-code float-end" target="_blank">
+                                        <svg viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                        </svg></a>
+                                </div>
+                            </div>
+                            <div class="project-card skill-tag">
+                                <img src="https://private-user-images.githubusercontent.com/141244421/483185923-db1945ce-c35e-4d49-92ea-bb706f6dc23a.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTYzODk4NjMsIm5iZiI6MTc1NjM4OTU2MywicGF0aCI6Ii8xNDEyNDQ0MjEvNDgzMTg1OTIzLWRiMTk0NWNlLWMzNWUtNGQ0OS05MmVhLWJiNzA2ZjZkYzIzYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwODI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDgyOFQxMzU5MjNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01OTgxMzg4MTQ1N2Y1NTJmMzUzOTAxYjRjOTFhNzc5YmFmMTNmZTc1ZTE3NGQ0NzZmMjQwZmMwNzhlNTc0YTE4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.TpAtI58bxB1xLMzzfqPOXeAhJHScJnBY0eXbg75o03A"
+                                    alt="">
+                                <div class="project-card-body">
+                                    <h4>Fitness Gym Club Web (ASP.NET MVC)</h4>
+                                    <p>The project is to provide a convenient interface of the customer interactions,
+                                        coaches, and the administration of the gym. Manage base on user roles and
+                                        permissions. and user roles.</p>
+                                    <a href="https://github.com/PisethPT/Fitness-Gym-Club-ASP.NET-MVC-Identity-EF-Core-"
+                                        target="_blank" class="social-link source-code float-end">
+                                        <svg viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                        </svg></a>
+                                </div>
+                            </div>
+                            <div class="project-card skill-tag">
+                                <img src="https://private-user-images.githubusercontent.com/141244421/380506816-873960b6-0b5d-479a-876a-1905d3642b8c.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTYzOTAxNzEsIm5iZiI6MTc1NjM4OTg3MSwicGF0aCI6Ii8xNDEyNDQ0MjEvMzgwNTA2ODE2LTg3Mzk2MGI2LTBiNWQtNDc5YS04NzZhLTE5MDVkMzY0MmI4Yy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwODI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDgyOFQxNDA0MzFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05NDhkNDRiMWI1MDIzZTIyZDQ4NGM2YzEzNDIyZTUwZTgxYTU3NjgyYjY4OTIyYTA4MGYxZjQxYTc5YzI4MjVmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.uuI769smc6NP1eu4ScKZ3gKkttUKrFS8b-Ke2AUSPoI"
+                                    alt="">
+                                <div class="project-card-body">
+                                    <h4>MPOS System</h4>
+                                    <p>MPOS System is developed using ADO.NET (Windows Forms) and SQL Server. It
+                                        provides a point-of-sale solution for managing sales...</p>
+                                    </p>
+                                    <a href="https://github.com/PisethPT/MPOS.App" target="_blank"
+                                        class="social-link source-code float-end">
+                                        <svg viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                        </svg></a>
+                                </div>
+                            </div>
+                            <div class="project-card skill-tag skill-tags">
+                                <img src="https://private-user-images.githubusercontent.com/141244421/380468619-3e3ba68c-1626-487e-b34d-ade5f2a59b86.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTYzOTAxMDcsIm5iZiI6MTc1NjM4OTgwNywicGF0aCI6Ii8xNDEyNDQ0MjEvMzgwNDY4NjE5LTNlM2JhNjhjLTE2MjYtNDg3ZS1iMzRkLWFkZTVmMmE1OWI4Ni5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwODI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDgyOFQxNDAzMjdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zYzUwZWRlNWMyZDU1NTNhMjA4N2ZkYWUxM2ZkYzU5OTM4ZmQyMDdjYWE4NTBiZWU5ZDYzNmU0MmUxNTM1YTNmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.d6xRIeUsNKz4bhUnbi_JHerYk1j3lUeUxH68SFzx-U0"
+                                    alt="">
+                                <div class="project-card-body">
+                                    <h4>Record Shop</h4>
+                                    <p>The project is to keep a record of books in the store. The following information
+                                        about books must be stored: name of the book, ...</p>
+                                    <a href="https://github.com/PisethPT/RecordShop" target="_blank"
+                                        class="social-link source-code float-end">
+                                        <svg viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                        </svg></a>
+                                </div>
+                            </div>
+                            <div class="project-card skill-tag">
+                                <img src="https://private-user-images.githubusercontent.com/141244421/345974660-b80db375-6483-48a1-8f08-fa67bde128a3.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTYzOTAwMzksIm5iZiI6MTc1NjM4OTczOSwicGF0aCI6Ii8xNDEyNDQ0MjEvMzQ1OTc0NjYwLWI4MGRiMzc1LTY0ODMtNDhhMS04ZjA4LWZhNjdiZGUxMjhhMy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwODI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDgyOFQxNDAyMTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02ODAyOGRmYmE2ZTI3Y2Q5ZjA3N2M1NjkwZmZiM2FjNDFkY2VlZTMzMzQxZGQxNTgwNjQ5NTVlYjYwMmQ4YjA0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.EidmAHSYUmox0HGOX8ZE_b0eb49SHdylTOHkCLT6BVw"
+                                    alt="">
+                                <div class="project-card-body">
+                                    <h4>Book Library Mobile App (Maui)</h4>
+                                    <p>This Project Development is to create a mobile application for managing a book
+                                        library using .NET MAUI.</p>
+                                    <a href="https://github.com/PisethPT/.NetMAUIBookLibraryOpenAPI.Org" target="_blank"
+                                        class="social-link source-code float-end">
+                                        <svg viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                        </svg></a>
+                                </div>
+                            </div>
+                            
+                            <a href="https://github.com/PisethPT?page=2&tab=repositories" target="_blank"
+                                class="skill-tag underline-none more">More Projects ...</a>
+
                         </div>
                     </div>
                 </div>
