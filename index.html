@@ -731,8 +731,13 @@
             margin-bottom: 0;
             border-top-left-radius: 25px;
             border-top-right-radius: 25px;
-            transition: transform 0.3s ease;
+            transition: transform filter 0.3s ease;
             display: block;
+            filter: grayscale(100%);
+        }
+
+        img:hover {
+            filter: grayscale(0%);
         }
 
         h4 {
@@ -1006,7 +1011,7 @@
                         <h3>School Projects & Others</h3>
                         <div class="project-group">
                             <div class="project-card skill-tag">
-                                <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/141244421/483180052-25980612-1aa4-408f-9b55-9ce65ddec6fd.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250828%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250828T142448Z&X-Amz-Expires=300&X-Amz-Signature=db4b988f6908769bae86bef44872a5f2943571428bd764a809c25c618c7081a2&X-Amz-SignedHeaders=host"
+                                <img src="https://github.com/user-attachments/assets/25980612-1aa4-408f-9b55-9ce65ddec6fd"
                                     alt="">
                                 <div class="project-card-body">
                                     <h4>V-EPL System (Vue 3 + Element Plus + Tailwind CSS)</h4>
